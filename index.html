@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalculateApp</title>
+
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1 id="calculator">Calculator</h1>
+        <div id="table">
+          <table>
+            <thead>
+              <tr>
+                <th colspan=""></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>Theme</td>
+              <td colspan="7">
+                <div class="coli">
+                  <button class="btn  clou"><input type="radio" name="" id="premier" class=""/></button> 
+                  <button class="btn clou"><input type="radio" name="" id="deuxieme" class="hidden"/></button> 
+                 <button class="btn clou"><input type="radio" name="" id="troisieme" class="hidden"/></button> 
+                </div>
+              </td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="contenu">
+        <div id="interface">
+          <output class="" value="" id="ecran"> </output>
+        </div>
+
+        <div id="clavier">
+          <table>
+            <tr>
+              <td>
+                <button onclick="affiche('7')" class="btn chiffre taille">7</button>
+                <button onclick="affiche('8')" class="btn chiffre taille">8</button>
+                <button onclick="affiche('9')" class="btn chiffre taille">9</button>
+                <button onclick="del()" class="btn color taille">
+                  DEL
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="affiche('4')" class="btn chiffre taille">4</button>
+                <button onclick="affiche('5')" class="btn chiffre taille">5</button>
+                <button onclick="affiche('6')" class="btn chiffre taille">6</button>
+                <button value="+" class="btn taille signe" id="plus" onclick="">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="affiche('1')" class="btn chiffre taille">1</button>
+                <button onclick="affiche('2')" class="btn chiffre taille">2</button>
+                <button onclick="affiche('3')" class="btn chiffre taille">3</button>
+                <button onclick="" value="-" class="btn taille signe">-</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button value="." onclick="affiche('.')" class="btn chiffre taille">
+                  .
+                </button>
+                <button onclick="affiche('0')" class="btn chiffre taille">0</button>
+                <button onclick="" value="/" class="btn chiffre taille signe">÷</button>
+                <button onclick="" value="*" class="btn chiffre taille signe">x</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="btn color reset" onclick="effacer()">
+                  RESET
+                </button>
+                <button  class="btn egale" id="equal">
+                  =
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
